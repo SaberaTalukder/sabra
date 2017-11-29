@@ -8,6 +8,7 @@ overall
 home
 -want to make the bottom picture (with flower in hair) from seville on the right side
 -redirect the paper link to open in a new internet page
+-make the boarder on the scrolling pictures at the top consistent
 
 projects
 -the systems headline in projects needs to become something better
