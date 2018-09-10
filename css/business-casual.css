@@ -4,6 +4,24 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+ /*Things I have added*/
+
+.table{
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align: left;
+}
+
+/*nav ul{height:650px; width:750px;}
+nav ul{overflow:hidden; overflow-y:scroll;}*?
+
+/**/
+
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/night.jpeg') no-repeat center center fixed;
