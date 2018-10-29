@@ -137,7 +137,7 @@
                                         <br>
                                         <font face="Garamond" size="5px" style="line-height: 1.6;">&emsp;You have heard variations of these words in whispers throughout the internet, but you might not actually know what they mean. And it's no wonder! A simple Google search of the term ‘neuroengineering’ returns an expansive yet unhelpful Wikipedia page and fairly nondescript university landing sites.
                                         <br><br>
-                                        &emsp;This burgeoning, fuzzily-defined, interdisciplinary field of neuroscience, electrical engineering, biochemistry, and computer science has just started to emerge from the dark hallways of academia. And it will revolutionize the way humans interact with themselves, information, and their surroundings!
+                                        &emsp;This burgeoning, fuzzily-defined, interdisciplinary field of neuroscience, electrical engineering, biochemistry, and computer science has just started to emerge from the dark hallways of academia. And it will revolutionize the way humans interact with themselves, information, and their surroundings.
 
                                         <br><br>
                                         If you don't believe me, check out Cathy drinking her morning cup of coffee.
@@ -148,10 +148,10 @@
                                             </iframe>
                                         </div>
 
-                                        &emsp; <a href="https://news.brown.edu/articles/2012/05/braingate2">Cathy</a>, has been paralyzed for over fifteen years, and yet with her brain she can control a robotic arm like it's her arm!... But how?!... We will get to it in more detail, but it all starts with that little gray box affixed to her head. It is also worth mentioning that this work only falls into one of the neuroengineering sub-fields! The work coming out of the other sub-fields is just as amazing.
+                                        &emsp; <a href="https://news.brown.edu/articles/2012/05/braingate2">Cathy</a>, has been paralyzed for over fifteen years, and yet with her brain she can control a robotic arm like it's her arm!... But how?!... We will get to it in more detail, but it all starts with that little gray box affixed to her head. It is also worth mentioning that this work only falls into one of the neuroengineering sub-fields. The work coming out of the other sub-fields is just as amazing.
                                         <br><br>
 
-                                        &emsp; Let's demystify some aspects of neuroengineering so that you can approach and understand the field. Fair warning, neuroengineering is so young that many researchers do not even agree on terminology!
+                                        &emsp; Let's demystify some aspects of neuroengineering so that you can approach and understand the field. Fair warning, neuroengineering is so young that many researchers do not even agree on terminology.
 
                                         <br><br>&emsp;There is so much to cover, but let's start by establishing common ground. We are going to: define neuroengineering by outlining its major divisions. Sounds simple enough! 
                                         <br>
@@ -171,7 +171,7 @@
                                         <br>
                                         &emsp;Wooh that was a mouthful! Let's break it down.
                                         <br><br>
-                                        &emsp;<b>Reading and writing information out of the central or peripheral nervous systems</b> is largely encapsulated in the field of neuroprosthetics. One example of a neural prosthesis is the system that allows Cathy to control the robotic arm!
+                                        &emsp;<b>Reading and writing information out of the central or peripheral nervous systems</b> is largely encapsulated in the field of neuroprosthetics. One example of a neural prosthesis is the system that allows Cathy to control the robotic arm.
                                         <br><br>
                                         &emsp;The devices created within the neuroprosthetics field go by many names such as brain machine interfaces (BMIs), neural prostheses, neural interfaces, brain computer interfaces (BCIs), and many many others. These terms are mostly interchangeable.
 
@@ -183,7 +183,7 @@
                                         &emsp;That's great, but how does a neural prosthesis work? You can divide what a prosthesis does into four main categories: (1) hardware to collect neural activity, (2) software to spike sort, (3) software to perform neural decoding, and finally (4) software and hardware that use control signals to perform some output.
                                         <br><br>
 
-                                        &emsp;We are going to dive into these categories in more depth, but before we do below is an image of the entire work flow for a CNS and invasive neural prosthesis.
+                                        &emsp;We are going to dive into these categories in more depth, but before we do, below is an image of the general work flow for a CNS and invasive neural prosthesis. Notice that the diagram represents many types of prosthetics, including motor and communication prostheses.
 
                                         <img class="img-border img-left" src="img/neural_prostheses_flow.png" alt="flow flow through a general neural prostheses, aka brain machine interface, brain computer interface, and neural prosthetic " style="width:90%; height:90%; margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
 
@@ -191,7 +191,7 @@
                                         &emsp;As we progress through this section reference this image if you can't visualize where in the loop we are. In addition, I encourage you to envision how you think this figure changes if the prosthetic deals with the PNS or is non-invasive. Now to business!
                                         <ol>
                                         <br>
-                                            <li>&emsp;<u>Hardware to collect neural activity.</u> This usually amounts to a type of electrode array. In Cathy's case and in our diagram the array is invasive, but non-invasive arrays also exist!
+                                            <li>&emsp;<u>Hardware to collect neural activity.</u> This usually amounts to a type of electrode array. In Cathy's case and in our diagram the array is invasive, but non-invasive arrays also exist.
                                             <br><br>
                                             &emsp;I know what you’re thinking. A non-invasive way to monitor neural activity? Pshh, I’ll believe it when I see it. Well here you go!
                                             <br>
@@ -208,7 +208,7 @@
                                             </li>
                                             <br>
 
-                                            <li>&emsp;The next component in our neural prosthesis is: <u>software that can detect and decouple neural spikes.</u> There are many spike sorting approaches from threshold based, to hoop based, to principal components based. For now, we are only going to dive into the simplest one, the threshold spike sorter!
+                                            <li>&emsp;The next component in our neural prosthesis is: <u>software that can detect and decouple neural spikes.</u> Neural spikes are the temporal record of when a neuron fires an action potential. There are many spike sorting approaches from threshold based, to hoop based, to principal components based. For now, we are only going to dive into the simplest one, the threshold spike sorter.
 
                                             <br><br>
                                             &emsp;In this case, we start with raw spikes from our electrode array, filter them with a high pass filter, set a voltage threshold for each neuron, then sort them based on their threshold. Don't worry, we'll break it down further!
@@ -218,14 +218,14 @@
                                             &emsp;In the "High Pass Filtered" sub-image you can see how there are many spikes but only two main voltage levels. The assumption is that each voltage level corresponds to a different neuron. Given this assumption, we set two threshold values which are the red lines in the "Thresholded" sub-image. We then extract the spikes at each threshold value to get the red and green traces in the "Sorted Spikes" sub-image.
                                             The red trace corresponds to the waveform of one neuron, and the green trace corresponds to the waveform of the other neuron.
                                             <br><br>
-                                            &emsp; Spike sorting is ridiculously important because it is virtually impossible to measure just one neuron’s activity from the electrode arrays!
+                                            &emsp; Spike sorting is ridiculously important because it is virtually impossible to measure just one neuron’s activity from the electrode arrays.
                                             </li>
 
                                             <br>
-                                            <li>&emsp;Once we have our separated spikes we have to read them! We accomplish this with: <u>software that performs neural decoding.</u> Before we jump into neural decoding let's define some terminology. Neural encoding is how we map a behavior to the neural responses it evokes. Neural decoding is how we map from neural responses to the behavior encoded in those neural responses. 
+                                            <li>&emsp;Once we have our separated spikes we have to read them! We accomplish this with: <u>software that performs neural decoding.</u> Before we jump into neural decoding let's define some terminology. Neural encoding is how we map a behavior to the neural responses the behavior evokes. Neural decoding is how we map from neural responses to the behavior encoded in those neural responses. 
                                             <img class="img-border img-left" src="img/neural_encoding_neural_decoding.png" alt="Picture of the neuropixel probe that is inserted in the brain. The probe is common for many neuroengineering studies." style="width:100%; height:100%; margin-top: 3%; margin-bottom: 5%; border-radius:30px; border-width:thick">
                                             <br><br>
-                                            &emsp;We can use neural decoding to predict the behavior from our neural signals, or in Cathy's case we can use neural decoding to control a robotic arm. That is why in the diagram above there are two pathways for neural decoding!
+                                            &emsp;You can perform neural encoding for humans, or some monkeys that have similar neural architectures to humans. The data generated can then be useful to create neural decoders. In Cathy's case, we can use a neural decoder to control a robotic arm. 
                                             <br><br>
                                             &emsp;Neural decoders can be broken up into discrete and continuous decoders. Discrete decoders are concerned with decoding the final state of an action, while continuous decoders are concerned with decoding the entire progression of an action. Can you guess which type of decoder was used for Cathy?
                                             What about the decoder used in the video below?
@@ -235,7 +235,7 @@
                                                 </iframe>
                                             </div>
                                             <br>
-                                            &emsp;Cathy's decoder was continuous because the robot arms needs an entire, continuous trajectory to bring the coffee to her mouth. The video above is an example of a communication prosthesis, and it was a trick question! This particular communication prosthesis was continuous (you can see the cursor moving on the screen continuously), as well as discrete. However, a discrete decoder by itself would be sufficient for a communication prosthesis if we only care about the final key strike.
+                                            &emsp;Cathy's decoder was continuous because the robot arms needs an entire, continuous trajectory to bring the coffee to her mouth. The video above is an example of a communication prosthesis, and it was a trick question! This particular communication prosthesis was continuous, you can see the cursor moving on the screen continuously, as well as discrete. However, a discrete decoder by itself would be sufficient for a communication prosthesis if we only care about the final key strike.
                                             <br><br>
                                             &emsp;There are bayesian decoders, population vector decoders, FORCE decoders, Wiener filers, Kalman filters, and so many other algorithms that can be used to perform both discrete and continuous decoding. But, we will save the details of those algorithms for future blog posts!
                                             </li>
@@ -246,7 +246,7 @@
                                                 <iframe src="https://giphy.com/embed/9ryDkIpVqvGgbzqZQW" width="50%" height="40%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen> 
                                                 </iframe>
                                             </div>
-                                            &emsp;Just look at how happy Cathy, as well as the researcher sitting behind her are that this motor prosthesis worked. It is heartwarming to see this awe-inspiring feat of neuroengineering tangibly help her!
+                                            &emsp;Just look at how happy Cathy, as well as the researcher sitting behind her are that this motor prosthesis worked. It is heartwarming to see this awe-inspiring feat of neuroengineering tangibly help her.
                                             </li>
                                         </ol>
 
@@ -259,21 +259,21 @@
                                         &emsp;An important note: some devices that neither read nor write information out of the brain, like deep brain stimulators or transcranial magnetic stimulators, are sometimes referred to as neural prostheses. They are more appropriately characterized as neuromodulatory devices. Regardless, they can still be incredibly effective at treating some diseases like Parkinson's or Depression! 
 
                                         <br><br>
-                                        &emsp;<b><u>Controlling neurons to investigate neural circuits</u></b> largely deals with the phenomenon of optogenetics. Optogenetics is a method to induce or suppress neural activity by making neurons responsive to specific wavelengths of light. In other words, we can shine a red light on a neuron and make it fire an action potential or stop firing an action potential. I swear this is not fiction, just incredible science! So how does it work?
+                                        &emsp;<b><u>Controlling neurons to investigate neural circuits</u></b> largely deals with the phenomenon of optogenetics. Optogenetics is a method to induce or suppress neural activity by making neurons responsive to specific wavelengths of light. In other words, we can shine a red light on a neuron and make it fire an action potential or stop firing an action potential. So how does it work?
                                         <br><br>
-                                        &emsp;It all started with Chlamydomonas reinhardtii (pronounced Clammy-dough-moan-us Re-in-harty), a single celled algae that can sense light through its eyespot with light sensitive proteins called opsins. We are going to call them Clammy for short!
+                                        &emsp;It all started with Chlamydomonas reinhardtii (pronounced Clammy-dough-moan-us Re-in-harty), a single celled algae that can sense light through its eyespot with light sensitive proteins called opsins. We are going to call them Clammy for short.
                                         <img class="img-border img-left" src="img/Clammy.png" alt="Picture of Chlamydomonas reinhardtii. Whose opsins were heavily used in optogenetics" style="width:40%; height:25%; margin-left: 30%; margin-right: 30%; margin-top:1%; margin-bottom: 5%; border-radius:30px; border-width:thick">
                                         <br><br>
                                         &emsp;Channelrhodopsin-2 (ChR2), one of Clammy’s opsins, is activated in the presence of blue light and when activated allows positive ions to flow through it. When ChR2 is expressed in a neuron, and you shine blue light on that neuron, the ChR2 channel opens and allows positive ions to exchange across the neuron’s membrane. The most common ions to flow across a neuronal membrane are Na<sup>+</sup>, K<sup>+</sup>, and Ca<sup>2+</sup>. Na<sup>+</sup> and Ca<sup>2+</sup>flow into the neuron, K<sup>+</sup> flows out of the neuron. This ion flow causes the neuron to fire an action potential from light alone!
                                         <br><br>
                                         &emsp;Since Clammy made their debut, many more opsins have been discovered that both promote and suppress neural firing. Some common opto-inhibitors are archeorhosopsins, bacteriophodopsins, and proteorhodopsins. These opsins pump H<sup>+</sup> out of the neuron, thereby hyperpolarizing the neuron. Hyperpolarization makes the neuron's membrane potential more negative and decreases the chance that another action potential will fire.
                                         <br><br>
-                                        &emsp;Now that we know about both classes of opsins, the excitatory and inhibitory, let's look at an example of one in action!
+                                        &emsp;Now that we know about both classes of opsins, the excitatory and inhibitory, let's look at an example of one in action.
                                         <br><br>
                                         <div style="width:100%;height:0;padding-bottom:48%;margin-left:3%;position:center;">
                                             <iframe src="https://giphy.com/embed/lYic4dCugvP1dCp0Jm" width="50%" height="40%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                                         </div>
-                                        &emsp;In the video above, halorhodopsin is expressed in the C. elegans' motor neurons. Halorhodopsin is activated by yellow light and inhibits the neurons by allowing Cl<sup>-</sup> into the cell. Therefore, when the yellow light turns on, indicated by the yellow circle in the bottom left of the screen, the halorhodopsin is activated, the motor neurons are inhibited, and the C. elegan cannot move!  
+                                        &emsp;In the video above, halorhodopsin is expressed in the C. elegans' motor neurons. Halorhodopsin is activated by yellow light and inhibits the neurons by allowing Cl<sup>-</sup> into the cell. Therefore, when the yellow light turns on, indicated by the yellow circle in the bottom left of the screen, the halorhodopsin is activated, the motor neurons are inhibited, and the C. elegan cannot move. 
                                         <br><br>
                                         &emsp;It is amazing that there are so many inhibitory and excitatory opsins that control neurons through so many ions! But, how do we get a neuron to express an opsin? 
                                         <br><br>
@@ -281,9 +281,9 @@
                                         <br><br>
                                         &emsp;This feat of neuroengineering allows researchers to literally control which neurons fire, when those neurons fire, and for how long those neurons fire. Considering the fact that “neurons that fire together wire together”, optogenetics gives neuroscientists a tool to directly and fairly specifically control our neural circuits.
                                         <br><br>
-                                        &emsp;For example, imagine that every time you ate broccoli you stimulated your neural circuit for pleasure and felt the most elated sensation that you have ever felt in your life. You would probably eat a lot more broccoli! But all jokes aside, it is a little scary that there are a limitless number of behaviors that could be controlled with optogentic or similar methods. We will get into the "similar methods" in a few paragraphs! 😊
+                                        &emsp;For example, imagine that every time you ate broccoli you stimulated your neural circuit for pleasure and felt the most elated sensation that you have ever felt in your life. You would probably eat a lot more broccoli! But all jokes aside, it is a little scary that there are a limitless number of behaviors that could be controlled with optogentic or similar methods. We will get into the similar methods in a few paragraphs. 😊
                                         <br><br>
-                                        &emsp;But how would this work in a human? Because unlike C. elegans, we are not see through. The mouse below has an optical fiber implanted in its head that can trigger ChR2 expressing neurons, and is the poster mouse of the <a href="http://web.stanford.edu/group/dlab/optogenetics/">optogenetics research center</a>. Meaning this mouse is likely one of the most fa<u>mouse</u> mice in the world! All because of optogenetics! 
+                                        &emsp;But how would this work in a human? Because unlike C. elegans, we are not see through. The mouse below has an optical fiber implanted in its head that can trigger ChR2 expressing neurons, and is the poster mouse of the <a href="http://web.stanford.edu/group/dlab/optogenetics/">optogenetics research center</a>. Meaning this mouse is likely one of the most fa<u>mouse</u> mice in the world. 
 
                                         <img class="img-border img-left" src="img/mouseOpto.png" alt="" style="width:90%; height:100%; margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
 
@@ -292,7 +292,7 @@
                                         <br><br>
                                         &emsp;Some argue that sonogenetics, magnetogenetics, and the many other spin-offs are more desirable for humans than optogenetic approaches. Can you guess why?
                                         <br><br>
-                                        &emsp;Well I don't know about you, but I don't really want an optic fiber inserted into my head even if it could control my neurons. This complaint hits at one of the largest issues, it is hard to expose deep brain areas to light non-invasively. But it's probably easier to target those deep brain areas with ultrasound or magnetic fields.
+                                        &emsp;Well I don't know about you, but I don't really want an optic fiber inserted into my head even if it could control my neurons. This complaint hits at one of the largest issues, it is hard to expose deep brain areas to light non-invasively. It is probably easier to target those deep brain areas with ultrasound or magnetic fields.
                                         <br><br>
                                         &emsp;Much like our other sub-fields of neuroengineering there are budding companies and efforts in this space. For now, I will refrain from commenting on the legitimacy of the technologies at each company and save it for future blog posts! However, some players are Circuit Therapeutics, Bruker, Inscopix, etc.
 
@@ -306,7 +306,7 @@
                                         <br>
                                         &emsp;You might ask yourself, why do we need both analog and digital components on the chip? The main reason is that our CNS and PNS operate through both continuous (analog) and discrete (digital) communications. Therefore, to capture the manner in which the brain communicates, we must include both components in our hardware. 
                                         <br><br>
-                                        &emsp;A digital form of biological communication might seem difficult to achieve, but it does exist! Action potentials are “all or nothing” events and are a form of the nervous system’s discrete communication. Below is a cartoon mock up of an action potential!
+                                        &emsp;A digital form of biological communication might seem difficult to achieve, but it does exist. Action potentials are “all or nothing” events and are a form of the nervous system’s discrete communication. Below is a cartoon mock up of an action potential!
                                         <br><br>
                                         <div style="width:100%;height:0;padding-bottom:48%;position:relative;"><iframe src="https://giphy.com/embed/9N2UvCx7wXLnG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
@@ -328,18 +328,18 @@
                                         <li> A spike-routing tree network that has low latency. This means that information packets can flow quickly from neuron to neuron.
                                         </li>
                                         <br>
-                                        <li> An architecture with low bandwidth, meaning that not many information packets can flow. This is not ideal, but we will get to why it is acceptable soon!
+                                        <li> An architecture with low bandwidth, meaning that not many information packets can flow. This is not ideal, but we will get to why it is acceptable soon.
                                         </li>
                                         <br>
-                                        <li>A setup containing deadlock-free communication, this allows you to send one information packet to many destinations.
+                                        <li>A setup containing deadlock-free communication, which allows you to send one information packet to many destinations.
                                         </li>
                                         </ul>
                                         <br>
                                         &emsp;Although having low bandwidth is not ideal, having the ability to send one information packet to many destinations is essential for modeling a neuron! It is a necessity because, in real life neurons can send their signals to many other neurons via their axonal arbors.
                                         <br><br>
-                                        &emsp;These design decisions enabled Neurogrid to model one million neurons with billions of synaptic connections in real time! That is pretty impressive for silicon, even if it still is inferior to carbon!
+                                        &emsp;These design decisions enabled Neurogrid to model one million neurons with billions of synaptic connections in real time! That is pretty impressive for silicon, even if it still is inferior to carbon.
                                         <br><br>
-                                        &emsp;Now what about <u>neuroengineering in software</u>? I’m sure you have heard about artificial intelligence, machine learning, or deep learning by now!  Well within deep learning, some classes of algorithms, such as neural networks, have heavily borrowed principles from neuroscience. A visualization of a neural network is shown below! Does it maybe look like a bunch of interconnected neurons?
+                                        &emsp;Now what about <u>neuroengineering in software</u>? I’m sure you have heard about artificial intelligence, machine learning, or deep learning by now!  Well within deep learning, some classes of algorithms such as neural networks, have heavily borrowed principles from neuroscience. A visualization of a neural network is shown below! Does it maybe look like a bunch of interconnected neurons?
                                         <img class="img-border img-left" src="img/neural_network.png" alt="" style="width:60%; height:30%; margin-left: 20%; margin-right: 20%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick;">
 
                                         <br><br>
@@ -347,16 +347,16 @@
                                         <br><br>
                                         &emsp;Each circle in the image above can be thought of as a neuron, in the loose sense that each circle performs a computation. The lines between each "neuron" can be thought of as axons and dendrites because they propagate weighted signals between the computational units. Within a neural network, the weights change during training to optimize the prediction on a specific task. The analog here is that the dendritic and axonal weights change in the brain based on our experiences.
                                         <br><br>
-                                        &emsp;Those are a few examples of how neural networks loosely resemble the nervous system! Thankfully, the principles borrowed have led to dramatically improved performance on tasks such as the classic video game, <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">Atari</a>! The sharing between the two field has even been dubbed a <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">virtuous circle</a>. Thus far, however, information has flown mostly from neuroscience to software!
+                                        &emsp;Those are a few examples of how neural networks loosely resemble the nervous system. And interestingly enough, the principles borrowed have led to dramatically improved performance on tasks such as the classic video game, <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">Atari</a>! The sharing between the two field has even been dubbed a <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">virtuous circle</a>. Thus far, however, information has flown mostly from neuroscience to software.
                                         <br><br>
 
-                                        &emsp;<b><u>Exceptions to our categories</u></b>. Within this article I have alluded to the presence of other devices and fields within neuroengineering, like neuromodulatory devices. By no means have we explored everything created or existing in the field of neuroengineering. However, the technologies listed here are some of most promising and rigorous in the field!
+                                        &emsp;<b><u>Exceptions to our categories</u></b>. Within this article I have alluded to the presence of other devices and fields within neuroengineering, like neuromodulatory devices. By no means have we explored everything created or existing in the field of neuroengineering. However, the technologies listed here are some of most promising and rigorous in the field.
 
                                         <br><br>
                                         <h3>Final Thoughts</h3>
-                                        &emsp;Neuroengineering is a dynamic and highly interdisciplinary field that aims to understand, mimic, control, and ultimately master the brain. These lofty goals are transpiring quickly making it a more exciting time than ever for the space!
+                                        &emsp;Neuroengineering is a dynamic and highly interdisciplinary field that aims to understand, mimic, control, and ultimately master the brain. These lofty goals are transpiring quickly making it a more exciting time than ever for the space.
                                         <br><br>
-                                        &emsp; In future blog posts we will dive further into the details behind each of these sub-fields and the main players in them! We have barely scratched the surface!
+                                        &emsp; In future blog posts we will dive further into the details behind each of these sub-fields and the main players in them. We have barely scratched the surface!
                                         <br><br>
 
                                     </p>
