@@ -238,7 +238,7 @@
                                             </li>
                                             <br>
 
-                                            <li>&emsp;The next component in our neural prosthesis is: <u>software that can detect and decouple neural spikes.</u> There are many spike sorting approaches from threshold based, to hoop based, to prinicple components based. For now we are only going to dive into the simplest one, the threshold spike sorter!
+                                            <li>&emsp;The next component in our neural prosthesis is: <u>software that can detect and decouple neural spikes.</u> There are many spike sorting approaches from threshold based, to hoop based, to principal components based. For now we are only going to dive into the simplest one, the threshold spike sorter!
 
                                             <br><br>
                                             &emsp;In this case, we start with raw spikes from our electrode array, filter them with a high pass filter, set a voltage threshold for each neuron, then sort them based on their threshold. Don't worry, we'll break it down further!
@@ -294,55 +294,106 @@
                                         &emsp;It all started with Chlamydomonas reinhardtii (pronounced Clammy-dough-moan-us Re-in-harty), a single celled algae that can sense light through its eyespot with light sensitive proteins called opsins. We are going to call them Clammy for short!
                                         <img class="img-border img-left" src="img/Clammy.png" alt="Picture of Chlamydomonas reinhardtii. Whose opsins were heavily used in optogenetics" style="width:40%; height:25%; margin-left: 30%; margin-right: 30%; margin-top:1%; margin-bottom: 5%; border-radius:30px; border-width:thick">
                                         <br><br>
-                                        &emsp;Channelrhodopsin-2 (ChR2), one of Clammy’s opsins, is activated in the presence of blue light and when activated allows positive ions to flow through it. When ChR2 is expressed in a neuron, and you shine blue light on that neuron, the ChR2 channel opens and allows positive ions to exchange across the neuron’s membrane. The most common ions to flow in the case of a neuron are Na<sup>+</sup>, K<sup>+</sup>, Ca<sup>2+</sup>, and H<sup>+</sup>. They each flow down their respective electrochemical gradients. There flow into his cascade of events causes the neuron to fire an action potential from light!
+                                        &emsp;Channelrhodopsin-2 (ChR2), one of Clammy’s opsins, is activated in the presence of blue light and when activated allows positive ions to flow through it. When ChR2 is expressed in a neuron, and you shine blue light on that neuron, the ChR2 channel opens and allows positive ions to exchange across the neuron’s membrane. The most common ions to flow across a neuronal membrane are Na<sup>+</sup>, K<sup>+</sup>, and Ca<sup>2+</sup>. Na<sup>+</sup> and Ca<sup>2+</sup>flow into the neuron, K<sup>+</sup> flows out of the neuron. This ion flow causes the neuron to fire an action potential from light alone!
                                         <br><br>
-                                        &emsp;Since Clammy made their debut, many more opsins have been discovered that both promote and suppress neural firing, and many more ways of introducing these opsins into neurons have been developed.
+                                        &emsp;Since Clammy made their debut, many more opsins have been discovered that both promote and suppress neural firing. Some of the common opto-inhibitors are archeorhosopsins, bacteriophodopsins, and proteorhodopsins. These opsins pump H<sup>+</sup> out of the neuron, therby hyperpolarizing the neuron. Hyperpolarization makes the neuron's membrane potential more negative and decreases the chance that another action potential will fire.
                                         <br><br>
-                                        &emsp;The most common methods to introduce the opsins into neurons are to use viral vectors, or I won’t dive into those details in this blog post,  because for now it is more important to spend time on why this is revolutionary. 
+                                        &emsp;Now that we know about both classes of opsins, the excitatory and inhibitory, let's look at an example of one in action!
                                         <br><br>
-                                        &emsp;<a href="http://web.stanford.edu/group/dlab/optogenetics/">Pictured below</a> is a mouse with an optical fiber implanted in its head than can trigger optically responsive neurons, or in other words, what I imagine is one of the most famous mice in the world! (DESCRIBE THIS MORE -- It's not clear to me why this mouse is so famouse. All i see is a mouse with an antenna)
+                                        <div style="width:100%;height:0;padding-bottom:48%;margin-left:3%;position:center;">
+                                            <iframe src="https://giphy.com/embed/lYic4dCugvP1dCp0Jm" width="50%" height="40%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                        </div>
+                                        &emsp;In the video above, halorhodopsin is expressed in the C. elegans' motor neurons. Halorhodopsin is activated by yellow light and inhibts the neurons by allowing Cl<sup>-</sup> into the cell. Therefore when the yellow light turns on, indicated by the yellow circle in the bottom left of the screen, the halorhodopsin is activated, the motor neurons are inhibited, and the C. elegan cannot move!  
+                                        <br><br>
+                                        &emsp;It is amazing that there are so many inhibitory and excitatory opsins that control neurons through so many different ions! But, how do we get a neuron to express an opsin? 
+                                        <br><br>
+                                        &emsp;The most common methods to introduce opsins into neurons are to use viral vectors or to create transgenic animals. I won’t dive into those details in this blog post, because for now it is more important to spend time on why optogentics is revolutionary. 
+                                        <br><br>
+                                        &emsp;This feat of neuroengineering allows researchers to literally control which neurons fire, when those neurons fire, and for how long those neurons fire. Considering the fact that “neurons that fire together wire together”, optogenetics gives neuroscientists a tool to directly and fairly specifically control our neural circuits.
+                                        <br><br>
+                                        &emsp;For example, imagine that every time you ate broccoli you stimulated your neural circuit for pleasure and felt the most elated sensation that you have ever felt in your life. You would probably eat a lot more broccoli! But all jokes aside, it is a little scary that there are a limitless number of behaviors that could be controlled with optogentic or similar methods. We will get into the "similar methods" in a few paragraphs! 😊
+                                        <br><br>
+                                        &emsp;But how would this work in a human? Because unlike C. elegans, we are not see through. The mouse below has an optical fiber implanted in its head than can trigger ChR2 expressing neurons, and is the poster mouse of the <a href="http://web.stanford.edu/group/dlab/optogenetics/">optogenetics research center</a>. Meaning this mouse is likely one of the most fa<u>mouse</u> mice in the world! All because of optogenetics! 
 
                                         <img class="img-border img-left" src="img/mouseOpto.png" alt="" style="width:90%; height:100%; margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
 
                                         <br>
-                                        &emsp;Optogenetics, has been a revolutionary tool for the field of neuroengineering and neuroscience because it allows you to perturb neural systems in more causal manner than was ever possible before. (REALLY NOT SURE WHAT THIS MEANS)
+                                        &emsp;Optogenetics, has been a revolutionary tool for the field of neuroengineering and neuroscience because it allows you to perturb neural systems in more causal manner than was ever possible before. In addition, it ushered in experimentation for other neuronal control mechanisms like sonogenetics, controlling neurons with sound, and magnetogenetics, controlling neurons with magnets.
+                                        <br><br>
+                                        &emsp;Some argue that sonogenetics, magnetogenetics, and the many other spin-offs are more desireable for humans than optogenetic approaches. Can you guess why?
+                                        <br><br>
+                                        &emsp;Well I don't know about you, but I don't really want an optic fiber inserted into my head even if it could control my neurons. This complaint hits at one of the largest issues, it is hard to expose deep brain areas to light in a non-invasive manner. But it's proabably easier to target those deep brain areas with ultrasound or magentic fields.
+                                        <br><br>
+                                        &emsp;Much like our other subfields of neuroengineering there are budding companies and efforts in this space. For now I will refrain from commenting on the legitimacy of the technologies at each company and save it for future blog posts! However, some of the players are Circuit Therapeutics, Bruker, Inscopix, etc.
 
                                         <br><br>
-                                        &emsp;<b><u>Informing the algorithms used in hardware or software designs</u></b> is another field of neuroengineering that, you guessed it, aims to create more capable and efficient hardware and software by deriving inspiration from neuroscience.
-
+                                        &emsp;<b><u>Using the brain to inform the algorithms and architectures used in hardware or software designs</u></b> is another field of neuroengineering. In this field, engineers aim to create more capable and efficient hardware and software by deriving inspiration from neuroscience.
                                         <br><br>
+                                        &emsp;Let's start with <u>neuroengineering in hardware</u>! One of the most prevalent instantiations of neuroengineering in hardware is neuromorphic computing. Neuromorphic chips are hardware that utilize both analog and digital components to more realistically simulate the nervous system. Pictured below is Neurogrid, a type of neuromorphic chip.
 
-                                        &emsp;An example of neuroengineering in hardware is <a href="https://en.wikipedia.org/wiki/Neuromorphic_engineering">neuromorphic computing</a>. Neuromorphic chips are hardware that utilize both analog and digital components to more realistically simulate the nervous system. Pictured below is me giving a presentation on my research with <a href="https://web.stanford.edu/group/brainsinsilicon/neurogrid.html">Neurogrid</a>, a type of neuromorphic chip. (LESS TOOTING YOUR OWN HORN WITH THE IMAGE FROM REU AND MORE DESCRIBING WHAT THIS THING ACTUALLY IS/DOES)
-
-                                        <img class="img-border img-left" src="img/ngPres.jpg" alt="" style="width:50%; height:50%; margin-left: 25%; margin-right: 25%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick;">
+                                        <img class="img-border img-left" src="img/neurogrid_Chip.jpg" alt="" style="width:90%; height:70%; margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick;">
 
                                         <br>
-                                        &emsp;On the software side: artificial intelligence algorithms, such as Neural Networks and Deep Q Networks, have heavily borrowed principles from neuroscience. The principles borrowed have led to dramatically improved performance on tasks such as (the classic video game; hyperlink that shit) Atari! 😱 (EASY ON THE EMOJIS, IF IT"S OVERDONE IT LOSES ITS EFFECT)
+                                        &emsp;You might ask yourself, why do we need both analog and digital components on the chip? The main reason is that our CNS and PNS operate through both continuous (analog) and discrete (digital) communications. Therefore to capture the manner in which the brain communicates, we must include both components in our hardware. 
+                                        <br><br>
+                                        &emsp;A digital form of biological communication might seem difficult to achieve, but it does exist! Action potentials are “all or nothing” events and are a form of the nervous system’s discrete communication. Below is a cartoon mock up of an action potential!
+                                        <br><br>
+                                        <div style="width:100%;height:0;padding-bottom:48%;position:relative;"><iframe src="https://giphy.com/embed/9N2UvCx7wXLnG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+                                        <br>
+                                        &emsp;On the other hand, an analog method of communication in the nervous system is the release of neurotransmitters into the synaptic cleft. In reality neurotransmitters are discrete molecules, but at our level of resolution, they can be accurately approximated to continuous values. This is incredibly similar to the analog signals in electrical engineering, because any analog signal can be thought of as a summation of infinitely narrow discrete signals.
+                                        <br><br>
+                                        &emsp;A tricky neural property to implement that is neither truly discrete nor analog, is the connections within and between brain regions. Although these connections either exist or do not, their connectivity strength can vary dramatically. There is no straightforward answer to fully encapsulate this property in a hardware system.
+                                        <br><br>
+                                        &emsp;It will be helpful to ground this explanation in an example, so we are going to explore the implementation of Neurogrid. Neurogrid’s aim is to accurately simulate the dynamics of neural populations in hardware. To capture the properties of a neuron, Neurogrid had to recreate a neuron’s axonal arbors, synapses, and dendritic trees.
+                                        
+                                        <img class="img-border img-left" src="img/parts_of_a_neuron_neurogrid.png" alt="" style="width:90%; height:70%; margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick;">
 
                                         <br><br>
-                                        &emsp;The sharing between the two field has even been dubbed a <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">virtuous circle</a>. Thus far, however, information has flown mostly in one direction! (WHICH DIRECTION IS THAT)
+                                        &emsp;Since, hardware has limitations and we want to ideally simulate hundreds of thousands if not millions of neurons, energy efficiency and the amount of noise inherent to the circuit has to be taken into account. Given these constraints, the axonal arbor was implemented digitally, and the synapse and dendritic tree were implemented with analog components.
+                                        <br><br>
+                                        To connect neurons to one another, Neurogrid implemented:
+                                        <br><br>
+                                        <ul>
+                                        <li> A spike-routing tree network that has low latency. This means that information packets can flow quickly from neuron to neuron.
+                                        </li>
+                                        <br>
+                                        <li> An architecture with low bandwidth, meaning that not many information packets can flow. This is not ideal, but we will get to why it is acceptable soon!
+                                        </li>
+                                        <br>
+                                        <li>A setup containing deadlock-free communication, this allows you to send one information packet to many destinations.
+                                        </li>
+                                        </ul>
+                                        <br>
+                                        &emsp;Although having low bandwidth is not ideal, having the ability to send one information packet to many destinations is essential for modeling a neuron! Because in real life neurons can send their signals to many other neurons via their axonal arbors.
+                                        <br><br>
+                                        &emsp;These design decisions enabled Neurogrid to model one million neurons with billions of synaptic connections in real time! That is pretty impressive for silicon, even if it still is inferior to carbon!
+                                        <br><br>
+                                        &emsp;Now what about <u>neuroengineering in software</u>? I’m sure you have heard about artificial intelligence, machine learning, or deep learning by now!  Well within deep learning, some classes of algorithms, such as neural networks, have heavily borrowed principles from neuroscience. A visualization of a neural network is shown below! Does it maybe look like a bunch of interconnected neurons?
+                                        <img class="img-border img-left" src="img/neural_network.png" alt="" style="width:60%; height:30%; margin-left: 20%; margin-right: 20%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick;">
+
+                                        <br><br>
+                                        &emsp;Neural networks are models that perform layer based compuations. And there are many kinds of neural networks such as feedforward, convolutional, recurrent, and the list goes on! In this article we are going to focus on the biological analogs within neural netowrks rather than exploring exactly how they work.
+                                        <br><br>
+                                        &emsp;Each circle in the image above can be thought of as a neuron, in the loose sense that each circle performs a computation. The lines between each "neuron" can be thought of as axons and dendrites because they propogate weighted signals between the compuational units. The weights in a neural network change during training to optimize the prediction on a specific task. The analog here is that the dendritic and axonal weights change in the brain based on our experiences.
+                                        <br><br>
+                                        &emsp;Those are a few examples of how neural networks loosely resemble the nervous system! Thankfully, the principles borrowed have led to dramatically improved performance on tasks such as the classic video game, <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">Atari</a>! The sharing between the two field has even been dubbed a <a href="https://www.cell.com/neuron/fulltext/S0896-6273(17)30509-3">virtuous circle</a>. Thus far, however, information has flown mostly from neuroscience to software!
                                         <br><br>
 
-                                        &emsp;<b><u>Exceptions to our categories</u></b>. Within this article I have alluded to the presence of other devices and fields within neuroengineering, like neuromodulatory devices (i.e. DBSs). By no means have we explored everything created or existing in the field of neuroengineering. For example, I am intentionally leaving out non-invasive neuroengineering therapies. However, the technologies listed here are some of most promising and rigorous in the field.
-                                        <br><br>
-
-                                        &emsp;Perhaps in the future we will explore the history of neuroengineering, and everything under the sun that it encompasses! 😊
-
+                                        &emsp;<b><u>Exceptions to our categories</u></b>. Within this article I have alluded to the presence of other devices and fields within neuroengineering, like neuromodulatory devices. By no means have we explored everything created or existing in the field of neuroengineering. However, the technologies listed here are some of most promising and rigorous in the field!
 
                                         <br><br>
                                         <h3>Final Thoughts</h3>
-                                        &emsp; Neuroengineering is a dynamic and highly interdisciplinary field that aims to understand, mimic, control, and ultimately master the brain. Needless to say, it is an exciting time!
+                                        &emsp;Neuroengineering is a dynamic and highly interdisciplinary field that aims to understand, mimic, control, and ultimately master the brain. These lofty goals are transpiring quickly making it a more exciting time than ever for the space!
                                         <br><br>
-                                        &emsp; There is so much more to say about neuroengineering, but I will leave that for the many more blog posts to come! (THIS SEEMS REPEATED FROM THE SENTENCE TWO SENTENCES AGO)
+                                        &emsp; In future blog posts we will dive further into the details behind each of these subfields and the main players in them! We have barely scratched the surface!
                                         <br><br>
-                                        We have barely scratched the surface!
-                                        <br><br>
-                                        <br><br>
+
                                     </p>
                                     <hr>
                                     <br>
-                                    <p>
-                                    <font face="Garamond">If you like my content let me know, by tweeting or subscribing below!</font> 😊
+                                    <p style="text-align: center;">
+                                    <font face="Garamond" size="5px" >If you like my content let me know, by tweeting or subscribing below!</font> 😊
                                     </p>
                                     <font size = "4px">
                                         </div>
@@ -388,6 +439,7 @@
                                                 </div>
                                     </font>
                             <div id="disqus_thread"></div>
+                            <br><br>
                                 <script>
 
                                 /**
