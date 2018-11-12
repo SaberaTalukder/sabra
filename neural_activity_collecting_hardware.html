@@ -133,30 +133,11 @@
                     <p>
                         <br>
                             <h4 class="text-center"></h4> <!-- having this here fixes the the h3 headers down below -->
-                                <br> 
-                                TODO:
-                                <br>(1)make invasive/optical methods somehow apply to more than just one neuron in diagram
-                                <br>(2)make sure (1) which, (2) where, and (3) when for all methods
-                                <br>(3)https://elifesciences.org/articles/25690 --> GEVI video
-                                <br>(4)https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5715730/ --> redone image of the difference between voltage and calcium
-                                <br>(5) the method to measure action potentials from HHMI http://www.hhmi.org/biointeractive/neurophysiology-virtual-lab
-                                <br>(6) https://youtu.be/w6m5Pnox5z4
-                                <br>(7) http://www.jneurosci.org/content/36/39/9977
-                                <br>(8) http://www.sci.utah.edu/~gk/abstracts/bisti03/
-                                <br>(9) http://blackrockmicro.com/utah-slant-array/
-                                <br>(10) https://www.imec-int.com/en/articles/imec-releases-neuropixels-neural-probe-to-the-global-neuroscience-community
-                                <br>(11) https://www.neurosurgery-blog.com/archives/11778/intraoperative-electrocorticography
-                                <br>(13) UTAH arrrya 3d image
-                                <br>(14) http://autism.wikia.com/wiki/EEG
-                                <br>(15) https://journals-sagepub-com.ucsf.idm.oclc.org/doi/full/10.1177/155005940904000305?utm_source=summon&utm_medium=discovery-provider
-                                <br> (17) https://www.livescience.com/39074-what-is-an-mri.html
-                                <br> (18) https://science.howstuffworks.com/fmri.htm
-                                <Br> (19) https://www.youtube.com/watch?v=aUxteV8oFDI
-                                <br> (20)http://www.cns.nyu.edu/~david/courses/perception/lecturenotes/brain/brain-slides/?C=M;O=A
-                                <br>
+                                <br><br>
                                     <font face="Garamond" size="5px" style="line-height: 1.6;">&emsp;An incredibly important step, maybe even the most important step, in neuroengineering pipelines is collecting neural signals from the brain. The logic is that if you can collect higher resolution signals both spatially and temporally you can better understand a system of neurons which improves all <a href="https://saberatalukder.com/what_is_neuroengineering.html">three areas of neuroengineering</a>.
+
                                     <br><br>
-                                    &emsp;Before we dive in, let's first understand the types of neural signals we can collect from the brain. At a systems level, neuroscience data can be divided into functional neural data and structural neural data. If you are familiar with the canonical biological saying “structure leads to function” this division shouldn't surprise you.
+                                    &emsp;Let's first understand the types of neural signals we can collect from the brain. At a systems level, neuroscience data can be divided into <b>functional neural data</b> and <b>structural neural data</b>. If you are familiar with the canonical biological saying “structure leads to function”, this division shouldn't surprise you.
                                     <br><br>
                                     &emsp;If you are not familiar, no worries! Many examples of structure leading to function are attached to your body. Teeth are a common example: you have sharp incisors well as flatter molars. The structure, or the shape, of your tooth leads to its function. Therefore the sharp incisors are meant for tearing, while flatter molars are meant for grinding.
                                     <br><br>
@@ -180,6 +161,9 @@
                                     &emsp;For systems level neuroengineering, what do we want out of a functional neural signal?... Pause for a second and think about what you would want.
                                     <br><br>
                                     &emsp;In the ideal world, we would want to know precisely which neuron fired, where that neuron fired, and when that neuron fired. <b>Which</b> neuron deals with the neuron's unique identity, <b>where</b> deals with a neuron's location in the neural system, and <b>when</b> deals with the latency between the true action potential and the measurement's reporting of the action potential. When investigating each method we will evaluate how it performs on our three metrics of: (1) which, (2) where, and (3) when.
+
+                                    <br><br>
+                                    &emsp;Before we dive in further, I have a <i>neuroscience lab experiment</i> that you can run on your own. It will help you internalize some of what we discuss in this blog post and is pretty awesome, but you have to make it to the bottom!
 
                                     <br><br>
                                     <h3>Invasive & Optical</h3>
@@ -219,7 +203,7 @@
                                     &emsp; Calcium indicators are responsible for reporting the intracellular calcium concentration, they therefore are localized to a neuron's cytoplasm. As discussed above, when calicum rushes into the cell and a specific wavelength of light is shining on the neuron, a fluorescence indicator, either chemical or genetic, changes it's conformation and releases a different wavelength of light out. This wavelength that come out can then be measured. Let's zoom in on the neurons cytoplasm to see how it works.
                                     <img class="img-border img-left" src="img/calcium_indicator.png" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:90%; height:90%; margin-left: 5%; margin-right: 5%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
                                     <br><br>
-                                    &emsp; That sounds great, so what's the catch? Well calcium concentration changes are very slow, compared to the speed of an action potential. An action potential can take a few miliseconds, while calcium concentration changes occur on the order of 10s to 100s of miliseconds.
+                                    &emsp; That sounds great, so what's the catch? Well calcium concentration changes are very slow, compared to the speed of an action potential. An action potential can take a few miliseconds, while calcium concentration changes occur on the order of tens to hundreds of miliseconds.
                                     <br><br>
                                     &emsp;This means that calcium indicators have a significant time lag between when a true action potential fires and when the signal can be picked up. In addition to reporting action potentials too slowly, there is another issue related to calcium's slow kinetics. Can you guess what it is?
                                     <br><br>
@@ -355,44 +339,73 @@
                                     <br><br>
                                     <b><u>2D Arrays</u></b>
                                     <br>
-                                    &emsp;2D arrays are very similar to 3D arrays in the sense that they are used to measure local field potentials. The main difference is that they only sit on top of the brain and do not have any depth within it. ECoG or electrocortcography is the most populatr 2D array. I warn you that this next image is a little graphic, so scroll past it quickly if you aren't good with brains, but below you can see an image of what a 2D array looks like on a real human brain.
+                                    &emsp;2D arrays are very similar to 3D arrays in the sense that they are used to measure local field potentials. The main difference is that they only sit on top of the brain. ECoG, or electrocortcography, is the most popular 2D array. I warn you that this next image is a little graphic, so scroll past it quickly if you aren't good with brains, but below you can see an image of what a 2D array looks like on a real human brain.
 
                                     <img class="img-border img-left" src="img/ECoG.jpg" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:40%; height:90%; margin-left: 30%; margin-right: 30%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
                                     <br><br>
-                                    &emsp; The drawback with 2D arrays is that you don't get depth, but as long as the process you care about controlling targets the top of cortex and you do not need signal from neurons that are deeper it should be satisfactory.
+                                    &emsp; The drawback with 2D arrays is that you don't get depth, but as long as the process you care about investigating targets the top of cortex it should be satisfactory. In addition, the <b>when</b>, <b>which</b>, and <b>where</b> metrics are equivalent to those used with 3D arrays so we won't review them again.
 
                                     <br><br>
                                     <h3>Non-Invasive</h3>
-                                    &emsp; Non-invasive ways to measure brain function can either be electrical or blood based. In these cases you loose a lot of precision with your measurement, but depending on the experimental question that you are after the resolution of the data you generate can be sufficient. We are going to start by describing how an EEG works becuase it is most similar to the 3D and 2D arrays that we discussed above.
+                                    &emsp; Non-invasive ways to measure brain function can either be electrical or blood based. In these cases you loose a lot of precision with your measurement. We are talking about getting bulk signals from tens of thousands if not hundreds of thousands of neurons. You can forget about knowing what an individual neuron does, but depending on your experimental question the resolution of the data can be sufficient. Let's start by describing how an EEG works.
                                     <br><br>
                                     <b><u>EEG: Electroencephalography</u></b>
                                     <br>
-                                    &emsp;An EEG is essentially an electrode that records noninvasive local field potentials. Because an EEG must be placed on top of the scalp it can only detect the action potentials from tens of thousands of neurons. EEGs are therefore useful for measuring large synchronized events across the brain like those encountered in epilepsy or sleep. Now I have never seen someone so happy to be wearing an EEG cap, but check out the woman below who is clearly having a ball.
+                                    &emsp;An EEG is essentially a non-invasive set of electrodes that records local field potentials, making it in principle similar to the 3D and 2D arrays we discussed above. Because an EEG must be placed on top of the scalp it can only detect the action potentials from tens of thousands of neurons. EEGs are therefore useful for measuring large synchronized events across the brain like those encountered in epilepsy or sleep. Now I have never seen someone so happy to be wearing an EEG cap, but check out the woman below who is clearly having a ball.
                                     <br>
                                     <img class="img-border img-left" src="img/woman_with_EEG.jpg" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:60%; height:90%; margin-left: 20%; margin-right: 20%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
                                     <br>
-                                    &emsp;We understand that invasive arrays measure the local field potentials by hvaing their electrodes actually measure the voltage around many neurons, so how can you measure these local field potentials non-invasively? Well it is largely due to the nature of the neurons underneath the scalp. Remember earlier how we saw that an action potential normally lasts on the order of a few miliseconds, well there are also other signals in the brain that last longer.
+                                    &emsp;One question that should be gnawing at us: how can we measure local field potentials noninvasively? Well it is largely due to the properties of the neurons underneath the scalp. Remember earlier how we saw that an action potential normally lasts on the order of a few miliseconds, well there are other signals in the brain that last longer.
                                     <br><br>
-                                    &emsp; The postsynaptic potential is a graded response in the axon terminal resulting from the release of neurotransmitters into the cleft, or space where one neuron ends and other begins. In cortical pyarmidal neurons, the postsynaptic potential can last for 10s of miliseconds, which is much longer than the length of an action potential.
+                                    &emsp; The postsynaptic potential is a graded response in the axon terminal. The postsynaptic potential occurs when neurotransmitters are released into the cleft, which is the space where one neuron ends and other begins. In cortical pyarmidal neurons, the postsynaptic potential can last for tens of miliseconds, which is much longer than the length of an action potential.
                                     <br><br>
-                                    &emsp; Since cortical pyarmidal neurons are positioned parallel to the scalp, when many have postsynaptic potentials at the same time relatively large electrical dipoles are created. This dipole is so strong when it come from 10s of thousands of neurons that it can be measured from the scalp.
+                                    &emsp; Since cortical pyarmidal neurons are positioned perpendicularly to the scalp, when many have postsynaptic potentials at the same time relatively large electrical dipoles are created. An electric dipole is a pair of oppositely charged poles seperated by some distance. When tens of thousands of neurons fire in synchrony a very strong electric dipole is created that it can be measured from the scalp.
+                                    <img class="img-border img-left" src="img/EEG_measurement.png" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:100%; height:100%; margin-left: 0%; margin-right: 00%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
+                                    <br>
+                                    &emsp; I hate to say it, but EEGs are not great at any of the <b>when</b>, <b>which</b>, and <b>where</b> metics we have defined. They can't tell you exactly <b>when</b> a single neuron fires, <b>which</b>, specific neuron has fired, or <b>where</b> in a neural circuit a neuron exists. Ok great, so why does this method exist?
+                                    <br><br>
+                                    &emsp; EEGs are useful because there are a lot of neural patterns that envoke tens of thousands of neurons at a time, like delta waves in sleep. For these high level functions EEGs are a fantastic experimental method.
+
                                     <br><br>
                                     <b><u>fMRI: Functional Magnetic Resonance Imaging</u></b>
                                     <br>
-                                    &emsp; Before we can explain what fMRI is capable of let's briefly describe how an MRI machine works. An MRI machine essentially creates an incredibly strong magnetic field that can align the electron spins in hydrogen atoms. Since our body is mainly made of water, when we are put in an MRI machine all of the hydrogen atoms in water molecules have their electron spins aligned. Then when the magnetic field is removed the electron spins return to their normal spins and release a radio frequency that can be detected. The rate of return to a normal spin is affected by the body tissue the water molecule is in, which is why MRI machines can create images that identify specific tissues.
+                                    &emsp; Before we can explain what fMRI is capable of let's see what an MRI machine looks like, and then describe what an fMRI scan looks at.
+                                    <img class="img-border img-left" src="img/MRI_scan.jpg" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:100%; height:100%; margin-left: 0%; margin-right: 00%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
+                                    <br>
+                                    &emsp;A common fMRI technique is the BOLD fMRI, so we are going to dive into how it <i>functions</i>. To start off, BOLD fMRI stands for blood oxygentation level dependent functional magnetic resonance imaging. Wow that was a lot, but let's go for it!
                                     <br><br>
-                                    &emsp; Now fMRI is very similar, but instead of looking at the spins of hydrogens on waters,...
-                                    
+                                    &emsp; The premise of BOLD is that neurons do not have an internal reserves of sugar and oxygen which means when they fire an action potential they use up energy that must be replenished. This process of using then needing sugar and oxygen is called the hemodynamic response.
+                                    <br><br>
+                                    &emsp; When hemoglobin comes and drops off oxygen molecules to the neurons the hemoglobin's magnetic properties change. The MRI machine can then detect the differences in magnetic properties between the oxygenated hemoglobin and deoxygenated hemoglobin. The images we generate from hemoglobin's different states look like the one below, where the orange areas are regions that were active.
+                                    <br><br>
+                                    <img class="img-border img-left" src="img/fMRI.jpg" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:80%; height:100%; margin-left: 10%; margin-right: 10%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
+                                    <br><br>
+                                    &emsp; Ok this is cool, but the resolution is on the scale of hundreds of thousands of neurons. And if we learned anything from the EEG <b>when</b>, <b>which</b>, and <b>where</b> metrics, fMRI is not going to be much better. So, why is fMRI helpful?
+                                    <br><br>
+                                    &emsp; There are few neuroscience setups that allow you to experiment on awake human beings, and this happens to be one. In the fMRI your patient can be awake, and you can ask them questions or gives them cues to see which brain areas light up. fMRI gives you a high level understanding that can later be probed with the other functional data collection methods that we have discussed.
+
+                                    <br><br>
+                                    <h3>Final Thoughts</h3>
+                                    &emsp; We have covered a lot of ways to collect <b>systems level, functional neural data</b> from the brain. And now we should celebrate our knowledge by running an experiment!
+                                    <br><br>
+                                    &emsp;If you click on the image below, a virtual lab environment will appear. In this neuroscience lab you will be able to inject fluorescent dyes into leech neurons (a little different than what we discussed, but just pretend you are injecting a chemical indicator), and measure action potentials from leech neurons!
+
+                                    <a href="https://www.hhmi.org/biointeractive/neurophysiology-virtual-lab" target="_blank">
+                                        <img class="img-border img-left" src="img/HHMI.png" alt="categories of neural prostheses: central nervous system, or peripheral nervous system, invasive or non-invasive. Where brain machine interfaces, brain computer interfaces, and neural prosthetics fall" style="width:40%; height:100%; margin-left: 30%; margin-right: 30%; margin-top: 3%; margin-bottom: 3%; border-radius:30px; border-width: thick">
+                                    </a>
+                                    <br>
+                                    &emsp; Neurons are amazing, and the ways in which we attempt to measure their action potentials across systems will keep improving. For now though we've gotten a comprehensive understanding of how we gather these signals!
                                         
                                     </font>
+                                    <br>
                                     <hr>
                                     <p>
+                                    <br> 
                                         <font size="2px" style="line-height:0.4;">
-                                        &emsp; In this article I referenced: [1] Neural prosthetic work from Brown University, [2] Neural prosthetic work from Stanford University, [3] Neural interface work from CTRL -labs, [4] Neuroprosthetic work for the neuropixel probe, [5] Optogenetics work from Stanford University, [6] Neuromorphic computing work from Stanford University, [7] Work from 3blue1brown, and [8] work from DeepMind.
+                                        &emsp; In this article I referenced: [1] https://elifesciences.org/articles/25690, [2] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5715730/, [3] https://youtu.be/w6m5Pnox5z4, [4] http://www.jneurosci.org/content/36/39/9977, [5] http://www.sci.utah.edu/~gk/abstracts/bisti03/, [6] http://blackrockmicro.com/utah-slant-array/, [7] https://www.imec-int.com/en/articles/, [8] https://www.neurosurgery-blog.com/archives/11778/intraoperative-electrocorticography, [9] http://autism.wikia.com/wiki/EEG, [10] https://journals.sagepub.com/doi/abs/10.1177/155005940904000305, [11] https://www.livescience.com/39074-what-is-an-mri.html, [12] https://science.howstuffworks.com/fmri.htm, [13] https://www.youtube.com/watch?v=aUxteV8oFDI, [14] http://www.cns.nyu.edu/~david/courses/perception/lecturenotes/brain/brain-slides/?C=M;O=A, [15] Principles of Neurobiology, [16] https://www.vanderbilthealth.com/radiology/49783, [17] https://www.ndcn.ox.ac.uk/divisions/fmrib/what-is-fmri/how-is-fmri-used.
                                         </font>
                                     </p>
                                     <hr>
-                                    <br>
                                     <p style="text-align: center;">
                                         <font face="Garamond" size="5px" >If you like my content let me know, by tweeting or subscribing below!</font> 
                                     </p>
