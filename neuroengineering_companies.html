@@ -40,9 +40,148 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
     <style>
-    img:hover {
-      opacity: 0.5;
-      filter: alpha(opacity=50);
+    .square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain; /* you change this to "contain" if you don't want the images to be cropped */
+    }
+    .square:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=30);
+    }
+    .img_1-1{
+    background-image:url('img/cala.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_1-2{
+    background-image:url('img/CTRL-labs.png');
+    background-color: black;
+    border-radius: 15%
+    }
+    .img_1-3{
+    background-image:url('img/kernel.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_2-1{
+    background-image:url('img/muse.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_2-2{
+    background-image:url('img/Neurosigma.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_2-3{
+    background-image:url('img/openwater.webp');
+    background-color: white;
+    border-radius: 15%
+    } 
+    .img_3-1{
+    background-image:url('img/cortera.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_3-2{
+    background-image:url('img/galvani.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_3-3{
+    background-image:url('img/iota.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_4-1{
+    background-image:url('img/medtronic.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_4-2{
+    background-image:url('img/neuralink.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_4-3{
+    background-image:url('img/Neuropace.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_5-1{
+    background-image:url('img/nevro.jpg');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_5-2{
+    background-image:url('img/Paradromics.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_5-3{
+    background-image:url('img/ripple.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_6-1{
+    float:center;
+    position: relative;
+    background-image:url('img/CircuitThera.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_6-2{
+    float:center;
+    position: relative;
+    background-image:url('img/Coda.jpg');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_7-1{
+    background-image:url('img/inscopix.jpg');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_7-2{
+    background-image:url('img/neurophotometrics.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_7-3{
+    background-image:url('img/neurolux.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_8-1{
+    background-image:url('img/ARM.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_8-2{
+    background-image:url('img/brainchip.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_8-3{
+    background-image:url('img/deepmind.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_9-1{
+    background-image:url('img/ibm.png');
+    background-color: white;
+    border-radius: 15%
+    }
+    .img_9-2{
+    background-image:url('img/qualcomm.png');
+    background-color: white;
+    border-radius: 15%
     }
     </style>
 
@@ -128,125 +267,87 @@
                                     <!-- <font size = "3px"> -->
                                         <p>
                                         <font face="Garamond" size="5px" style="line-height: 1.6;">
-                                        &emsp; Over the past few months many people have reached out to me wanting to know about the companies in the neuroengineering space...
+                                        &emsp; Over the past few months people have reached out to me wanting to know which companies do the neuroengineering work that we have been discussing in blog posts. I hope the following list is a fairly comprehensive resource for all neuroscientists, hardware engineers, programmers, etc. that are interested in working in the space!
                                         <br>
-                                        &emsp;The companies are divided into the three sections discussed previously... If you click on... With that let's dive in!
+                                        <br>
+                                        &emsp; <a href="https://saberatalukder.com/what_is_neuroengineering.html" target="_blank"> Previously </a> we have discussed three main classes of neuroengineering:
+                                        <ul>
+                                        <li>Reading and writing information into or out of the central or peripheral nervous systems.</li>
+                                        <li>Controlling neurons to investigate neural circuits.</li>
+                                        <li>Using the brain to inform the algorithms and architectures used in hardware or software designs.</li>
+                                        </ul>
+                                        <br>
+                                        &emsp;For the purposes of this article we are going to break the companies up into different categories. Namely:
+                                        <ul>
+                                        <li>Neuromodulators / Neurorecorders / Brain-Machine-Interfaces</li>
+                                            <ul>
+                                                <li>Non-invasive</li>
+                                                <li>Invasive</li>
+                                            </ul>
+                                        <li>Controlling Neurons for Neural Circuit Investigation</li>
+                                            <ul>
+                                                <li>X-genetics</li>
+                                                <li>Hardware / Software to Enable X-genetics</li> 
+                                            </ul>
+                                        <li>Neural Priciples in Hardware / Software</li>
+                                        </ul>
+                                        <br>
+                                        &emsp;If you click on a company logo you will be redirected to a page on their site so you can learn more about what they do. In addition, if I have missed a company or you would like your company included in the list please reach out and let me know! With that let's dive in!
 
                                         <br><br>
                                         <hr>
                                         <br>
-                                        <h3>Reading / Writing Information CNS / PNS:</h3>
-                                        <!-- First Row -->
-                                        <div style='text-align: center;'>
-                                        <div class = 'row' style='height:30%;'>
-                                            <div class = 'column' style='max-width:300px; max-height:200px; overflow: none; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/cala.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='max-width:300px; max-height:200px; overflow: none; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/cortera.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='max-width:300px; max-height:200px; overflow: none; padding:1.9%; border-radius: 25%; background:black; display: inline-block;'>
-                                                <img src="img/CTRL-labs.png" style='width:100%; height:100%'>
-                                            </div>
-                                        </div>
-                                        </div> 
+                                        <h3>Non-invasive:
                                         <br>
-                                        <!-- Second Row -->
-                                        <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/galvani.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/iota.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/kernel.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/medtronic.png" style='width:100%; height:100%'>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <!-- Third Row -->
-                                        <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/neuralink.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/Neuropace.png" style='width:100%; height:100%'>
-                                            </div>
-                                            
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/Neurosigma.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/nevro.jpg" style='width:100%; height:100%'>
-                                            </div>
-                                        </div> 
-                                        <br>
-                                        <!-- Fourth Row -->
-                                        <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/Paradromics.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/ripple.png" style='width:100%; height:100%'>
-                                            </div>
-                                        </div> 
-                                        <h3>X-Genetics:</h3>
-                                        <!-- First Row -->
-                                        <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/CircuitThera.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/Coda.jpg" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/inscopix.jpg" style='width:100%; height:100%'>
-                                            </div>
-                                        </div> 
-                                        <br>
-                                        <!-- Second Row -->
-                                        <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/mightex.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/neurophotometrics.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/neurolux.png" style='width:100%; height:100%'>
-                                            </div>
-                                        </div>
-                                        <br>
+                                        Neuromodulators / Neurorecorders / Brain-Machine-Interfaces</h3>
+                                        <a href="https://calahealth.com/" target="_blank"> <div class="square img_1-1 hover"> </div> </a>
+                                        <a href="https://www.ctrl-labs.com/ctrl-kit/" target="_blank"> <div class="square img_1-2"> </div> </a>
+                                        <a href="https://kernel.co/" target="_blank"> <div class="square img_1-3"> </div> </a>
+                                        <a href="https://choosemuse.com/how-it-works/" target="_blank"> <div class="square img_2-1"> </div> </a>
+                                        <a href="http://www.neurosigma.com/research.html" target="_blank"> <div class="square img_2-2"> </div> </a>
+                                        <a href="https://www.openwater.cc/" target="_blank"> <div class="square img_2-3"> </div> </a>
 
-                                        <br> 
-                                        <h3>Software / Hardware Mimicking CNS / PNS:</h3>
-                                        <!-- First Row -->
-                                        <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/ARM.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/brainchip.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/deepmind.png" style='width:100%; height:100%'>
-                                            </div>
-                                        </div> 
+                                        <h3>Invasive:
                                         <br>
-                                        <!-- Second Row -->
+                                        Neuromodulators / Neurorecorders / Brain-Machine-Interfaces</h3>
+                                        <a href="http://corteraneuro.com/products/neuroscience" target="_blank"> <div class="square img_3-1 hover"> </div> </a>
+                                        <a href="https://www.galvani.bio/" target="_blank"> <div class="square img_3-2"> </div> </a>
+                                        <a href="https://iota.bio/" target="_blank"> <div class="square img_3-3"> </div> </a>
+                                        <a href="https://www.medtronic.com/us-en/healthcare-professionals/products/neurological.html" target="_blank"> <div class="square img_4-1"> </div> </a>
+                                        <a href="https://www.neuralink.com/" target="_blank"> <div class="square img_4-2"> </div> </a>
+                                        <a href="https://www.neuropace.com/the-rns-system/" target="_blank"> <div class="square img_4-3"> </div> </a>
+                                        <a href="https://www.nevro.com/English/About-Us/Who-We-Are/default.aspx" target="_blank"> <div class="square img_5-1"> </div> </a>
+                                        <a href="https://paradromics.com/" target="_blank"> <div class="square img_5-2"> </div> </a>
+                                        <a href="https://rippleneuro.com/ripple-products/" target="_blank"> <div class="square img_5-3"> </div> </a>
+
+                                        <h3>X-genetics:
+                                        <br>
+                                        Controlling Neurons for Neural Circuit Investigation</h3>
+                                        <a href="http://www.circuittx.com/index.html" target="_blank"> <div class="square img_6-1"> </div> </a>
+                                        <a href="https://www.codabiotherapeutics.com/" target="_blank"> <div class="square img_6-2"> </div> </a>
+                                        <div class="square"></div>
+
+                                        <h3>Hardware / Software to Enable X-genetics:
+                                        <br>
+                                        Controlling Neurons for Neural Circuit Investigation</h3>
+                                        <a href="https://www.inscopix.com/technology" target="_blank"> <div class="square img_7-1"> </div> </a>
+                                        <a href="https://www.neurophotometrics.com/" target="_blank"> <div class="square img_7-2"> </div> </a>
+                                        <a href="http://www.neurolux.org/product-overview/" target="_blank"> <div class="square img_7-3"> </div> </a>
+
+                                        <h3>Neural Priciples in Hardware / Software</h3>
+                                        <a href="https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4/docs" target="_blank"> <div class="square img_8-1"> </div> </a>
+                                        <a href="https://www.brainchipinc.com/" target="_blank"> <div class="square img_8-2"> </div> </a>
+                                        <a href="https://deepmind.com/" target="_blank"> <div class="square img_8-3"> </div> </a>
+
+                                        <a href="http://www.research.ibm.com/articles/brain-chip.shtml" target="_blank"> <div class="square img_9-1"> </div> </a>
+                                        <a href="https://www.qualcomm.com/news/onq/2013/10/10/introducing-qualcomm-zeroth-processors-brain-inspired-computing" target="_blank"> <div class="square img_9-2"> </div> </a>
+                                        <div class="square "> </div>
+ 
                                         <div style='text-align: center;'>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/ibm.png" style='width:100%; height:100%'>
-                                            </div>
-                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; background:white; display: inline-block;'>
-                                                <img src="img/qualcomm.png" style='width:100%; height:100%'>
-                                            </div>
-                                        </div>
+                                            <div class = 'column' style='width:30%; height:25%; padding:1.9%; border-radius: 25%; display: inline-block;'> </div>
+                                        </div> 
                                         
-                                        </font>
+                                    </font>
                                     
                                     <hr>
                                     <br>
