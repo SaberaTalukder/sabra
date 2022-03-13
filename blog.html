@@ -1,384 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125400271-1"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125400271-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-125400271-1');
-      //var disqus_url = '{{ site.url }}{{ page.url }}';
     </script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Sabera Talukder</title>
+  <title>Sabera Talukder - Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
 
-    <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    <div class="brand">Sabera Talukder</div>
-    <div class="address-bar">Neuroengineer | Creator | Researcher <br>
-    <a href="mailto:sabera.j.talukder@gmail.com"><span style="font-size:24pt"><img src="img/email.png"><font color="white"></font></span></a>
-    &nbsp;
-    <a href="https://twitter.com/SaberaTalukder"><span style="font-size:24pt"><img src="img/twitter.png"><font color="white"></font></span></a>
-    &nbsp;
-    <a href="https://scholar.google.com/citations?user=S00bhfIAAAAJ&hl=en&oi=ao"><span style="font-size:20pt"><img src="img/scholar.png"><font color="white"></font></span></a>
-    <!-- 
-    <a href="https://twitter.com/SaberaTalukder?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @SaberaTalukder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-    <a class="twitter-share-button" data-size="large" href="https://twitter.com/intent/tweet?text=@SaberaTalukder">Tweet</a> --></div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Sabera Talukder</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="honors.html">Honors</a>
-                    </li>
-                    <li>
-                        <a href="SaberaTalukderResume2017.pdf">CV</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="profile">
+        <img src="assets/img/sabera_talukder_headshot_2021_square_blue.jpg" alt="Sabera Talukder at the Annenberg Center for Information Science and Technology at Caltech" class="img-fluid rounded-circle" style="width:auto; height:200px;">
+        <h1 class="text-light"><a href="index.html">Sabera Talukder</a></h1>
+        <div class="social-links mt-3 text-center">
+         <p style="color:white;"><span class="typed" data-typed-items="Neuroengineer, Creator, Researcher"></span></p>
         </div>
-        <!-- /.container -->
-    </nav>
 
-    <div class="container">
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Welcome to My Blog!
-                        <!-- <strong>worth visiting</strong> -->
-                    </h2>
-                    <br>
-                    <div class="text-center">
-                        <font face="Garamond" size="3px" color="505050">
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroTag.html'" style="font-size:18px;font:bold; background-color:#FF8500; border-color:#FF8500;"><b>Neuroengineering</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroScienceTag.html'" style="font-size:18px; font:bold; background-color:#00b9ff; border-color:#00b9ff; btn:hover"><b>Neuroscience</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='AITag.html'" style="font-size:18px;font:bold; background-color:#FF2C00; border-color:#FF2C00;"><b>AI</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='techTag.html'" style="font-size:18px; font:bold; background-color:#FFB600; border-color:#FFB600; btn:hover"><b>Tech</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='miscellaneaTag.html'" style="font-size:18px; font:bold; background-color:#32CD32; border-color:#32CD32; btn:hover"><b>Miscellanea</b></button>
-                        </font>
-                    </div>
-                    <hr>
-                </div>
-
-                <br><br><br><br><br>
-                <div class="col-lg-20" style=" margin-left:5%; margin-right:2%;">
-                    <h3 style="line-height: 1.6;">
-                        <a href="neurips_2020.html" style="color:#505050" align="left">NeurIPS 2020 Review: Biology Edition</a> <small style="color:#000">December 14, 2020</small>
-                         <br>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='AITag.html'" style="font-size:18px;font:bold; background-color:#FF2C00; border-color:#FF2C00;"><b>AI</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroScienceTag.html'" style="font-size:18px; font:bold; background-color:#00b9ff; border-color:#00b9ff; btn:hover"><b>Neuroscience</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroTag.html'" style="font-size:18px;font:bold; background-color:#FF8500; border-color:#FF8500;"><b>Neuroengineering</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='techTag.html'" style="font-size:18px; font:bold; background-color:#FFB600; border-color:#FFB600; btn:hover"><b>Tech</b></button>
-                                   
-                    </h3>
-                                            
-                    <figure class="img-set">
-                        <a href="neurips_2020.html">
-                            <img class="img-border img-left" src="img/neurips_2020.jpg" alt="" style="width:25%; height:50%; border-radius:10px;">
-                        </a>
-                    </figure>
-                                    <p><font face="Garamond" size="5px" color="505050">Last week I had an amazing time at NeurIPS 2020! Despite the need to be physically distanced, the flow of ideas though zoom, gather, and rocket chat...
-                                    <br><br>
-                                    <b><u>Keywords:</u></b> Machine Learning, Artificial Intelligence, Biology, Neural Networks, Deep Learning, Neuroscience, Covid19, Healthcare, NeurIPS 
-                                    </font>
-
-                                    </p>
-
-                </div>
-                <hr>
-
-                <div class="col-lg-20" style=" margin-left:5%; margin-right:2%;">
-                    <h3 style="line-height: 1.6;">
-                        <a href="neuroengineering_companies.html" style="color:#505050" align="left">Neuroengineering Companies</a> <small style="color:#000">June 11, 2019</small>
-                         <br>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='AITag.html'" style="font-size:18px;font:bold; background-color:#FF2C00; border-color:#FF2C00;"><b>AI</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroScienceTag.html'" style="font-size:18px; font:bold; background-color:#00b9ff; border-color:#00b9ff; btn:hover"><b>Neuroscience</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroTag.html'" style="font-size:18px;font:bold; background-color:#FF8500; border-color:#FF8500;"><b>Neuroengineering</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='techTag.html'" style="font-size:18px; font:bold; background-color:#FFB600; border-color:#FFB600; btn:hover"><b>Tech</b></button>
-                                   
-                    </h3>
-                                            
-                    <figure class="img-set">
-                        <a href="neuroengineering_companies.html">
-                            <img class="img-border img-left" src="img/companies.png" alt="" style="width:25%; height:50%; border-radius:10px;">
-                        </a>
-                    </figure>
-                                    <p><font face="Garamond" size="5px" color="505050">Over the past few months people have reached out to me wanting to know which companies do the neuroengineering work that we have been discussing...
-                                    <br><br>
-                                    <b><u>Keywords:</u></b> Neuroengineering, Neural Engineering, Machine Learning, Artificial Neural Networks, Neuroscience, Neurotechnology, AI, Deep Learning
-                                    </font>
-
-                                    </p>
-
-                </div>
-                <hr>
-
-
-                <div class="col-lg-20" style=" margin-left:5%; margin-right:2%;">
-                    <h3 style="line-height: 1.6;">
-                        <a href="biohub_neuroengineering_symposium_papers.html" style="color:#505050" align="left">Paper Recap: The CZ Biohub Neuroengineering Symposium</a> <small style="color:#000">May 6, 2019</small>
-                         <br>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='AITag.html'" style="font-size:18px;font:bold; background-color:#FF2C00; border-color:#FF2C00;"><b>AI</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroScienceTag.html'" style="font-size:18px; font:bold; background-color:#00b9ff; border-color:#00b9ff; btn:hover"><b>Neuroscience</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='neuroTag.html'" style="font-size:18px;font:bold; background-color:#FF8500; border-color:#FF8500;"><b>Neuroengineering</b></button>
-                            <button type="button" class="btn btn-info" onclick="window.location.href='techTag.html'" style="font-size:18px; font:bold; background-color:#FFB600; border-color:#FFB600; btn:hover"><b>Tech</b></button>
-                                   
-                    </h3>
-                                            
-                    <figure class="img-set">
-                        <a href="biohub_neuroengineering_symposium_papers.html">
-                            <img class="img-border img-left" src="img/neuroengineering_symposium.jpg" alt="" style="width:25%; height:50%; border-radius:10px;">
-                        </a>
-                    </figure>
-                                    <p><font face="Garamond" size="5px" color="505050">A little over two weeks ago the Chan Zuckerberg Biohub kicked off its first ever Neuroengineering Symposium. It was a momentous event bringing together...
-                                    <br><br>
-                                    <b><u>Keywords:</u></b> Neuroengineering, Neural Engineering, Machine Learning, Artificial Neural Networks, Neuroscience, Neurotechnology, AI, Deep Learning
-                                    </font>
-
-                                    </p>
-
-                </div>
-                <hr>
-
-                <div class="col-lg-20" style=" margin-left:5%; margin-right:2%;">
-                    <h3 style="line-height: 1.6;">
-                        <a href="what_makes_someone_a_successful_scientist_or_engineer.html" style="color:#505050" align="left">What Makes Someone a Successful Scientist or Engineer?</a> <small style="color:#000">February 13, 2019</small>
-                         <br>
-                         <button type="button" class="btn btn-info" onclick="window.location.href='miscellaneaTag.html'" style="font-size:18px; font:bold; background-color:#32CD32; border-color:#32CD32; btn:hover"><b>Miscellanea</b></button>
-                                   
-                    </h3>
-                                            
-                    <figure class="img-set">
-                        <a href="what_makes_someone_a_successful_scientist_or_engineer.html">
-                            <img class="img-border img-left" src="img/STEM_img.png" alt="" style="width:25%; height:25%; border-radius:10px;">
-                        </a>
-                    </figure>
-                                    <p><font face="Garamond" size="5px" color="505050">What will make you a successful scientist, technologist, engineer, or mathematician? Hard work, tenacity, and passion applied to...
-                                    <br><br>
-                                    <b><u>Keywords:</u></b> Science, Technology, Engineering, Mathematics, Google Science Fair, Scientific American, Science in Action, Bangladesh, Water Purification
-                                    </font>
-
-                                    </p>
-
-                </div>
-
-
-                <hr>
-                <div class="col-lg-20" style=" margin-left:5%; margin-right:2%;">
-                    <h3 style="line-height: 1.6;">
-                                        <a href="functional_neural_systems_data.html" style="color:#505050" align="left">How Do You Collect Sytems Level Functional Neural Data?</a> <small style="color:#000">November 12, 2018</small>
-                                        <br>
-                                        <button type="button" class="btn btn-info" onclick="window.location.href='neuroTag.html'" style="font-size:18px;font:bold; background-color:#FF8500; border-color:#FF8500;"><b>Neuroengineering</b></button>
-                                        <button type="button" class="btn btn-info" onclick="window.location.href='neuroScienceTag.html'" style="font-size:18px; font:bold; background-color:#00b9ff; border-color:#00b9ff; btn:hover"><b>Neuroscience</b></button>
-
-                                            
-                                    </h3>
-                                            
-                                    <figure class="img-set">
-                                        <a href="functional_neural_systems_data.html">
-                                            <img class="img-border img-left" src="img/top_image.jpg" alt="" style="width:25%; height:25%; border-radius:10px;">
-                                        </a>
-                                    </figure>
-                                    <p><font face="Garamond" size="5px" color="505050">An incredibly important step, maybe even the most important step, in neuroengineering pipelines is collecting neural signals from the brain...
-                                    <br><br>
-                                    <b><u>Keywords:</u></b> Optical Imaging, Chemical Indicators, Genetic Indicators, GECI, GEVI, Electrical Recording, Utah Arrays, Neuropixel, ECoG, EEG, fMRI
-                                    </font>
-
-                                    </p>
-
-                                </div>
-
-
-                    <hr>
-                    <div class="col-lg-20" style=" margin-left:5%; margin-right:2%;">
-                    <h3 style="line-height: 1.6;">
-                                        <a href="what_is_neuroengineering.html" style="color:#505050" align="left">What is Neuroengineering?</a> <small style="color:#000">October 29, 2018</small>
-                                        <br>
-                                        <button type="button" class="btn btn-info" onclick="window.location.href='AITag.html'" style="font-size:18px;font:bold; background-color:#FF2C00; border-color:#FF2C00;"><b>AI</b></button>
-                                        <button type="button" class="btn btn-info" onclick="window.location.href='neuroTag.html'" style="font-size:18px;font:bold; background-color:#FF8500; border-color:#FF8500;"><b>Neuroengineering</b></button>
-                                        <button type="button" class="btn btn-info" onclick="window.location.href='techTag.html'" style="font-size:18px; font:bold; background-color:#FFB600; border-color:#FFB600; btn:hover"><b>Tech</b></button>
-
-                                            
-                                    </h3>
-                                            
-                                    <figure class="img-set">
-                                        <a href="what_is_neuroengineering.html">
-                                            <img class="img-border img-left" src="img/neural_cover.jpg" alt="" style="width:25%; height:25%; border-radius:10px;">
-                                        </a>
-                                    </figure>
-                                    <p><font face="Garamond" size="5px" color="505050">Neuroengineering. Neural engineering. Neurotechnology. You have heard variations of these words in whispers throughout the internet...
-                                    <br><br>
-                                    <b><u>Keywords:</u></b> Neuroengineering, Optogenetics, Neural prosthetics, Brain Computer Interfaces, Neuromorphic Computing, Neural Networks, Neuromodulation
-                                    </font>
-
-                                    </p>
-
-                                </div>
-
-                                <hr style="width:98%;">
-                                <br>
-
-                                    <!-- Begin MailChimp Signup Form -->
-                                            <div style="text-align:center; border:1px solid#00aced; border-radius: 25px; background: #c0deed; margin-right: 25%; margin-left: 25%;">
-                                                <div id="mc_embed_signup">
-                                                    <form action="https://saberatalukder.us19.list-manage.com/subscribe/post?u=fb192a0a1e9f21d632147a49a&amp;id=f593daccd7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                                        <div id="mc_embed_signup_scroll" style="text-align:center;">
-                                                        <h2><font size="5px" style="color:#0082b4;">Get Blog Posts Directly to Your Email!</font></h2>
-
-                                                        <div class="row">
-                                                            <div class="col-md-12" style="align-content:center">
-                                                
-                                                                <div class="mc-field-group" style="margin-left: 15%; margin-right: 15%;">
-                                                                    <input type="text" value="" name="MMERGE1" class="form-control" id="mce-MMERGE1" placeholder="Your Name (optional)">
-                                                                </div>
-                                                                <br>
-
-                                                                <div class="mc-field-group" style="margin-left: 15%; margin-right: 15%;">
-                                                                    <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Your Email (required)">
-                                                                </div>
-                                                                <br>
-                                                                <div id="mce-responses" class="clear">
-                                                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                                                </div> 
-
-                                                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
-                                                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fb192a0a1e9f21d632147a49a_f593daccd7" tabindex="-1" value=""></div>
-                                                                <!-- end -->
-
-                                                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="background-color:#1b95e0; font-size: larger; color:white;" color="#0084FF">
-                                                                </div>
-                                                                <br>
-                                                                
-                                                            </div>
-
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                </div>
-                                                </div>
-                    
-                <div class="clearfix"></div>
-            </div>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/SaberaTalukder" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="mailto:sabera.j.talukder@gmail.com" class="email"><i class="bx bx-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=S00bhfIAAAAJ&hl=en&oi=ao" target="_blank" class="scholar"><i class="bx bxs-graduation"></i></a>
+          <a href="Sabera_Talukder_Resume_For_Website_2022.pdf" target="_blank" class="resume"><i class="bx bx-file-blank"></i></a>
+          <a href="https://www.linkedin.com/in/sabera-talukder-69600bb1/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
-                            
+      </div>
 
-        <!-- <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>Research</strong>
-                    </h2>
-                    <hr>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>Water
-                        <small>Poor People</small>
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>Neurogrid
-                        <small>Kwabena</small>
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3> ESP
-                        <small>Juan</small>
-                    </h3>
-                </div>
-                <div class="col-sm-8 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3> Flies
-                        <small>KKKlan</small>
-                    </h3>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div> -->
+      <nav id="navbar" class="nav-menu navbar" style="top:-10px;">
+        <ul>
+          <li><a href="research.html"><i class="bx bxs-flask"></i> <span>Research</span></a></li>
+          <li><a href="blog.html"><i class="bx bx-edit"></i> <span>Blog</span></a></li>
+        </ul>
 
-        
+        <a class="twitter-timeline" data-theme="dark" style="top:5px;" data-width="300" data-height="265" href="https://twitter.com/SaberaTalukder?ref_src=twsrc%5Etfw">Tweets by SaberaTalukder</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </nav><!-- .nav-menu -->
     </div>
-    <!-- /.container -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <br>
-                    <a href="https://twitter.com/SaberaTalukder?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @SaberaTalukder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </header><!-- End Header -->
 
-                     <a class="twitter-share-button" data-size="large" href="https://twitter.com/intent/tweet?text=@SaberaTalukder">Tweet</a>
-                    <p>Copyright &copy; Sabera Talukder 2018</p>
-                </div>
-            </div>
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs col-lg-12" style="margin-left:-50px; margin-top:100px; position:fixed;">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center ">
+          <h1 style="color:white;"><i class="bx bx-edit" style="color:white; margin-left:35px;"></i> Blog</h1>
         </div>
-    </footer>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page" style="margin-top: -100px;">
+      <div class="container" style="margin-left: 15px; margin-top: 150px;">
+        <h2>Updating the page! Thanks for your patience!</h2>
+
+        <!--<section id="blog" class="#blog">
+          <h2 style="margin-left:35px;"><u>Working on updating the page! Thanks for your patience!</u></h2>
+          <br>
+          <ul style="list-style-type:none; margin-top: 20px;">
+            <li>
+              <div class="row">
+                <div class="col-sm-3 text-left"> 
+                  <img src="assets/img/publications/architecture_agnostic_neural_networks_img.png" alt="Sabera Talukder Architecture Agnostic Neural Networks Neurips 2020" style="max-width:100%; max-height:100%; border-radius: 10%;">
+                </div>
+
+                <div class="col-sm-8 text-right" style="font-size:18px; margin-left: 10px;">
+                  <h4><a href="https://arxiv.org/pdf/2011.02712.pdf" target="_blank"> Architecture Agnostic Neural Networks</a></h4>
+                  <b>Sabera Talukder*</b>, Guruprasad Raghavan*, Yisong Yue
+                  <br>
+                  Workshop Oral, <b>Neurips 2020</b>
+                  <br>
+                  [<a href="https://slideslive.com/38941256/architecture-agnostic-neural-networks" target="_blank">15 minute video</a>]
+                </div>
+              </div>
+              <br> <br>
+            </li>
+            <li>
+              <div class="row">
+                  <div class="col-sm-3 text-left"> 
+                    <img src="assets/img/publications/multimodal_representation_learning_sabera_talukder_neurips_2020.png" alt="Sabera Talukder Multimodal Representation Learning Neurips 2020" style="max-width:100%; max-height:100%; border-radius: 10%;">
+                  </div>
+
+                  <div class="col-sm-8 text-left" style="font-size:18px">
+                  <h4><a href="https://arxiv.org/pdf/2011.07191.pdf" target="_blank"> On the Benefits of Early Fusion in Multimodal Representation Learning</a></h4>
+                  George Barnum*, <b>Sabera Talukder*</b>, Yisong Yue
+                  <br>
+                  Workshop, <b>Neurips 2020</b>
+                  </div>
+              </div>
+              <br> <br>
+            </li>
+            <li>
+              <div class="row">
+                  <div class="col-sm-3 text-left"> 
+                    <img src="assets/img/publications/electrostatic_precipitator_circuit_sabera_talukder.jpg" alt="Sabera Talukder Electrostatic Precipitator Circuit" style="max-width:100%; max-height:100%; border-radius: 10%;">
+                  </div>
+
+                  <div class="col-sm-8 text-left" style="font-size:18px">
+                    <h4><a href="https://stacks.stanford.edu/file/druid:zt492wh8993/Talukder-thesis.pdf" target="_blank"> A Smoke Removing DC-DC Converter Composed of a Seven Stage Class DE Rectifier and a Class ϕ2 Inverter</a></h4>
+                    <b>Sabera Talukder</b> 
+                    <br>
+                    Electrical Engineering <b>Honors Thesis Stanford University 2018</b>
+                    </div>
+                  </div>
+              <br> <br>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-sm-3 text-left"> 
+                  <img src="assets/img/publications/drosophila_visual_memory_sabera_talukder.png" alt="Sabera Talukder Drosophila melanogaster Visual Learning and Memory" style="max-width:100%; max-height:100%; border-radius: 10%;">
+                </div>
+
+                <div class="col-sm-8 text-left" style="font-size:18px">
+                  <h4><a href="https://stacks.stanford.edu/file/druid:ps667dn9376/Talukder_Sabera_BioThesis.pdf" target="_blank"> Exploring Visual Memory Formation in
+                  <i>Drosophila melanogaster</i></a></h4>
+                  <b>Sabera Talukder</b> 
+                  <br>
+                  Biochemistry <b>Honors Thesis Stanford University 2018</b>
+                </div>
+              </div>
+              <br> <br>
+            </li>
+            <li>
+              <div class="row">
+                  <div class="col-sm-3 text-left"> 
+                    <img src="assets/img/publications/electrostatic_precipitator_sabera_talukder.jpg" alt="Sabera Talukder Electrostatic Precipitator IEEE Compel 2017" class="rounded-corners" style="max-width:100%; max-height:100%; border-radius: 10%;">
+                  </div>
+
+                  <div class="col-sm-8 text-left" style="font-size:18px">
+                    <h4><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8013316" target="_blank"> A Portable Electrostatic Precipitator to Reduce Respiratory Death in Rural Environments</a></h4>
+                    <b>Sabera Talukder</b>, Sanghyeon Park, Juan Rivas-Davila 
+                    <br>
+                    Oral, <b>IEEE Compel 2017</b>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </section> -->
+      </div>
+    </section>
+
+  </main><!-- End #main -->
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
